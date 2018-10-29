@@ -1,31 +1,31 @@
 make:
 
-	./workspace build
+	./easy build
 
 install:
 
-	./workspace install
+	./easy install
 
 clean:
 
-	./workspace clean
+	./easy clean
 
 novision:
 
-	./workspace build:novision
+	./easy build:novision
 
 setup:
 
-	./workspace setup
+	./easy setup
 
 cleannv:
 
-	./workspace clean:novision
+	./easy clean:novision
 
 test:
 
-	./workspace build:test
+	./easy build:test
 	
 cleantest:
 
-	./workspace clean:test
+	./easy clean:test
