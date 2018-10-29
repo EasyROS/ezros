@@ -18,15 +18,15 @@ def run(arg):
         if safe == 'clean':
             os.system('rm -rf src')
         os.system('mkdir src')
-        os.system('mkdir src/default')
+        os.system('mkdir src/ezros')
 
         clone('ros/catkin', ' ')
-        clone('EasyROS/ROServer', 'default')
-        clone('EasyROS/shellservice', 'default')
-        clone('EasyROS/webservice', 'default')
-        clone('EasyROS/env_public', 'default')
+        clone('EasyROS/ezshell', 'ezros')
+        clone('EasyROS/ezpublic', 'ezros')
+        clone('EasyROS/ezdep', 'ezros')
+        clone('EasyROS/env_public', 'ezros')
 
 
 def exe(arg):
     logging.info('Install')
-    clone(arg, 'default')
+    clone(arg, 'ezros')
