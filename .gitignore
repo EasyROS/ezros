@@ -102,3 +102,14 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# self
+*_release
+*_debug
+build*
+devel*
+logs*
+src
+.catkin_tools*
+.idea*
+cmake-build-debug
