@@ -106,9 +106,9 @@ venv.bak/
 # self
 *_release
 *_debug
-build*
-devel*
-logs*
+build_*
+devel_*
+logs_*
 src
 .catkin_tools*
 .idea*
