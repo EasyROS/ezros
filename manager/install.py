@@ -24,7 +24,7 @@ def run(arg):
         clone('EasyROS/ezshell', 'ezros')
         clone('EasyROS/ezpublic', 'ezros')
         clone('EasyROS/ezdep', 'ezros')
-        clone('EasyROS/env', 'ezros')
+        clone('EasyROS/env', ' ')
 
 
 def exe(arg):
