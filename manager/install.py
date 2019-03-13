@@ -24,6 +24,8 @@ def run(arg):
         clone('EasyROS/ezshell', 'ezros')
         clone('EasyROS/ezpublic', 'ezros')
         clone('EasyROS/ezdep', 'ezros')
+        clone('EasyROS/libzmq', 'ezros/ezdep')
+        clone('EasyROS/jsoncpp', 'ezros/ezdep')
         clone('EasyROS/env', ' ')
 
 
