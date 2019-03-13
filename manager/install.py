@@ -12,7 +12,7 @@ def clone(service, dir, remote='https://github.com/'):
         if (os.listdir(os.getcwd() + '/src/' + dir + '/' + service.split('/')[1]).__len__() > 0):
             print "\033[33;1m" + service.split('/')[1] + "     \texisted" + "\033[0m"
             print "\033[34;1m" + service.split('/')[1] + "     \tPulling" + "\033[32;1m"
-            os.system('cd src/' + dir + ' && git pull')
+            os.system('cd src/' + dir + '/' + service.split('/')[1] + ' && git pull')
     except:
         os.system('cd src/' + dir + ' && git clone ' + remote + service + '.git')
     finally:
