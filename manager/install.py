@@ -38,12 +38,14 @@ def run(arg):
                 os.system('mkdir src/ezros')
 
         clone('ros/catkin', '')
+        clone('EasyROS/env', '')
+
         clone('EasyROS/ezshell', 'ezros')
         clone('EasyROS/ezpublic', 'ezros')
         clone('EasyROS/ezdep', 'ezros')
+
         clone('EasyROS/libzmq', 'ezros/ezdep')
         clone('EasyROS/jsoncpp', 'ezros/ezdep')
-        clone('EasyROS/env', '')
 
     print "\033[32;1mFINISH\033[0m"
 
